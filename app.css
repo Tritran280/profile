@@ -1,0 +1,59 @@
+/* * {margin: 0px; padding: 0px;} */
+
+
+body {
+	margin: 0 auto;
+	max-width: 960px;
+  }
+  
+
+header,
+footer,
+section {
+	margin: 5px;
+	background-color: lightblue;
+	border: 2px solid red;
+	}
+
+header {
+	display: flex;
+	}
+	.left {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+		list-style: none;
+		border-right: 1px solid #34495e;
+	  	}
+	  
+		#avatar {margin: 10px auto;}
+		#avatar {border: 2px solid blue; border-radius: 100%;}
+		#name, #job {color: blue; font-weight: bold;text-align: center; padding: 5px;}
+		#name {font-size: 30px;}
+		#job {font-size: 25px;}
+
+
+
+	.right {flex-basis: 50%; list-style: none; }
+		
+		#dob,
+		#male,
+		#email,
+		#phone,
+		#address {
+			margin: 10px 10px; 
+			padding: 5px 10px; 
+			color: black;
+			font-size: 18px;
+		}
+		#dob:hover{color: blue;}
+		#male:hover{color: blue;}
+		#email:hover{color: blue;cursor: pointer;}
+		#phone:hover{color: blue;}
+		#address:hover{color: blue;}
+
+
+@media screen and (max-width: 768px) {
+	header {flex-direction: column;}
+		.right { border-top: 1px solid #34495e; padding: 5px 20px;}
+	}
